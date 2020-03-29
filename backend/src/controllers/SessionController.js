@@ -6,7 +6,7 @@ module.exports = {
 
         const ong = await connection('ongs')
             .where('id', id)
-            .select('name')
+            .select('name', 'id')
             .first();
 
         if (!ong) {
