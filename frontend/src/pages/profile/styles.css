@@ -1,0 +1,102 @@
+.profile-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile-container header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.profile-container header .welcome {
+    display: flex;
+    align-items: center;
+}
+
+.profile-container header span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.profile-container header {
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+.profile-container header img {
+    height: 64px;
+}
+
+.profile-container .button {
+    max-width: 264px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container .action-buttons {
+    display: flex;
+    min-width: 300px;
+    align-items: center;
+}
+
+.profile-container .action-buttons .logout {
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid #dcdce6;
+    transition: all 0.2s;
+}
+
+.profile-container .action-buttons .logout:hover {
+    border: 1px solid #e02041;
+}
+
+.profile-container .incidents-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    align-items: center;
+    margin-top: 80px;
+    list-style: none;
+}
+
+.profile-container .incidents-list li {
+    min-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: relative;
+}
+
+.profile-container .incidents-list li .info {
+    margin: 15px 0;
+    color: #41414d;
+}
+
+.profile-container .incidents-list li .info p {
+    padding: 8px 0;
+    color: #41414d;
+}
+
+.profile-container .incidents-list svg {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: all 0.2s;
+}
+
+.profile-container .incidents-list svg:hover {
+    color: #e02041;
+}
